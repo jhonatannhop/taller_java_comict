@@ -33,4 +33,24 @@ public class figuras_geometricas {
             return 0.0;  // Cada subclase implementará su propio cálculo de perímetro
         }
     }
+    public class Rectangulo extends FiguraGeometrica {
+        private double longitud;
+        private double ancho;
+
+        public Rectangulo(String nombre, String color, double longitud, double ancho) {
+            super(nombre, color);
+            this.longitud = longitud;
+            this.ancho = ancho;
+        }
+
+        @Override
+        public double calcularArea() {
+            return longitud * ancho;
+        }
+
+    }
+    public class Main {
+        public static void main(String[] args) {
+            Rectangulo rectangulo = new Rectangulo("Rectángulo", "Azul", 5.0, 3.0);
+            Circulo circulo = new Circulo("Círculo", "Rojo", 4.0);
 }
