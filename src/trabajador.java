@@ -20,4 +20,22 @@ public class trabajador {
             return super.toString() + ", Grado: " + grado;
         }
     }
+    public class Empleado extends Persona implements Trabajador {
+        private String cargo;
+
+        public Empleado(String nombre, int edad, String cargo) {
+            super(nombre, edad);
+            this.cargo = cargo;
+        }
+
+        @Override
+        public void realizarTarea() {
+            System.out.println("Realizando tarea laboral");
+        }
+
+        @Override
+        public String toString() {
+            return super.toString() + ", Cargo: " + cargo;
+        }
+    }
 }
