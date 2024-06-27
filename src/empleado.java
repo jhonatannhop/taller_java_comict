@@ -41,4 +41,8 @@ public class empleado {
             return getSalarioBase() + bono;
         }
     }
+    @Override
+    public double calcularSalario() {
+        return getSalarioBase() + comisionVentas;
+    }
 }
