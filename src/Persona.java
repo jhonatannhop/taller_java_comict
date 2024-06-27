@@ -13,6 +13,9 @@ public class Persona {
         this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
+    public Persona(String  nombre, int edad) {
+    }
+
     // Getter para nombre
     public String getNombre() {
         return nombre;
